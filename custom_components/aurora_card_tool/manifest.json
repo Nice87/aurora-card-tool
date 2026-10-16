@@ -1,0 +1,18 @@
+{
+  "domain": "aurora_card_tool",
+  "name": "Aurora Card Tool",
+  "documentation": "https://github.com/aurora-card/aurora-card-tool",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": [],
+  "version": "1.0.0",
+  "iot_class": "local_push",
+  "zeroconf": [],
+  "ssdp": [],
+  "homekit": {},
+  "config_flow": true,
+  "hacs": {
+    "dependencies": [],
+    "frontend_tags": ["aurora-card"]
+  }
+}

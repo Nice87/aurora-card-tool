@@ -1,0 +1,34 @@
+{
+  "title": "Aurora Card Tool",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konfiguracja Aurora Card Tool",
+        "description": "Skonfiguruj wstępne funkcje narzędzia Aurora Card Tool.",
+        "data": {
+          "enable_file_watcher": "Włącz monitorowanie plików (synchronizacja Samba / VS Code)",
+          "enable_ma_helpers": "Włącz pomocniki integracji Music Assistant",
+          "enable_z2m_topology": "Włącz pomocniki topologii siatki Zigbee2MQTT"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Ustawienia Aurora Card Tool",
+        "description": "Dostosuj opcje integracji i pakiety pomocników.",
+        "data": {
+          "enable_file_watcher": "Włącz monitorowanie plików (synchronizacja Samba / VS Code)",
+          "enable_ma_helpers": "Włącz pomocniki integracji Music Assistant",
+          "enable_z2m_topology": "Włącz pomocniki topologii siatki Zigbee2MQTT"
+        }
+      }
+    }
+  },
+  "ui": {
+    "saved": "Zapisano pomyślnie",
+    "error": "Wystąpił błąd",
+    "migrated": "Pomyślnie zaimportowano dane modułów"
+  }
+}

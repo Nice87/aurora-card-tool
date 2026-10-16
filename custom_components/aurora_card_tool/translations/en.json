@@ -1,0 +1,34 @@
+{
+  "title": "Aurora Card Tool",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Aurora Card Tool",
+        "description": "Configure initial features for Aurora Card Tool.",
+        "data": {
+          "enable_file_watcher": "Enable Live File Watcher (Samba/VS Code sync)",
+          "enable_ma_helpers": "Enable Music Assistant Integration Helpers",
+          "enable_z2m_topology": "Enable Zigbee2MQTT Mesh & Topology Helpers"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Aurora Card Tool Settings",
+        "description": "Tweak integration options and helper suites.",
+        "data": {
+          "enable_file_watcher": "Enable Live File Watcher (Samba/VS Code sync)",
+          "enable_ma_helpers": "Enable Music Assistant Integration Helpers",
+          "enable_z2m_topology": "Enable Zigbee2MQTT Mesh & Topology Helpers"
+        }
+      }
+    }
+  },
+  "ui": {
+    "saved": "Saved successfully",
+    "error": "An error occurred",
+    "migrated": "Module data imported successfully"
+  }
+}
