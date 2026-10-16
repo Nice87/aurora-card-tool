@@ -35,7 +35,9 @@ Designed with zero event-loop blocking, SHA-256 ETag short-circuit caching, and 
     - Add `https://github.com/Nice87/aurora-card-tool` as a **Custom Repository** in HACS (Category: *Integration*).<br>
     - Click the badge below to open it directly in your HACS store:
     <br><br>
-    [![Open Aurora Card Tool on Home Assistant Community Store (HACS).](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Nice87&repository=aurora-card-tool&category=integration)
+    <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Nice87&repository=aurora-card-tool&category=integration" target="_blank">
+  <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open Aurora Card Tool on HACS">
+</a>
     <br>
     </details>
 
