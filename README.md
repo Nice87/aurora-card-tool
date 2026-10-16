@@ -36,14 +36,16 @@ Designed with zero event-loop blocking, SHA-256 ETag short-circuit caching, and 
     - Click the badge below to open it directly in your HACS store:
     <br><br>
     <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Nice87&repository=aurora-card-tool&category=integration" target="_blank">
-  <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open Aurora Card Tool on HACS">
-</a>
+      <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open Aurora Card Tool on HACS">
+    </a>
     <br>
     </details>
 
 2. **Restart Home Assistant**, then navigate to **Settings → Devices & Services → Add Integration** or click the button below:
    <br><br>
-   <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=aurora_card_tool" target="_blank"><img src="https://my.home-assistant.io/badges/config_flow_start.svg"></a>
+   <a href="https://my.home-assistant.io/redirect/config_flow_start?domain=aurora_card_tool" target="_blank">
+     <img src="https://my.home-assistant.io/badges/config_flow_start.svg" alt="Open your Home Assistant instance to configure Aurora Card Tool">
+   </a>
 
 3. Search for **Aurora Card Tool** and complete the setup flow.
 4. The integration automatically establishes your secure directory structure:
