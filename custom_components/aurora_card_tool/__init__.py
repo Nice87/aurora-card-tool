@@ -26,7 +26,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     await storage.async_initialize()
 
     translator = AuroraTranslationHelper(hass)
-    await translator.async_load_translations()
+    await translator.async_load_translations()  # <-- Must be awaited!
 
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN]["storage"] = storage
@@ -50,7 +50,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     except Exception:
         pass
 
-    _LOGGER.info("Aurora Card Tool initialized successfully with non-blocking helpers.")
+    _LOGGER.info("Aurora Card Tool initialized successfully.")
     return True
 
 

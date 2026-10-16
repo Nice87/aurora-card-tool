@@ -34,7 +34,7 @@ class AuroraTranslationHelper:
         self._translations = await self.hass.async_add_executor_job(_load_sync)
 
     def get_translation(self, language: str, key_path: str, **kwargs: Any) -> str:
-        """Retrieve a translated string by dot-notation key (e.g. 'ui.saved') with formatting support."""
+        """Retrieve a translated string by dot-notation key with formatting support."""
         lang_data = self._translations.get(language, self._translations.get("en", {}))
         
         val: Any = lang_data
