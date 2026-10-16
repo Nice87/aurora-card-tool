@@ -15,6 +15,8 @@ from .ma_recommendations import AuroraMARecommendationsHelper
 from .ma_smart_group import AuroraMASmartGroupHelper
 from .z2m_topology import AuroraZ2MTopologyHelper
 from .virtual_sensor import AuroraVirtualSensorAggregator
+from .matter_helper import AuroraMatterFabricHelper
+
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -42,6 +44,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
     if settings.get("enable_z2m_topology", True):
         hass.data[DOMAIN]["z2m_topology"] = AuroraZ2MTopologyHelper(hass)
+
+    if settings.get("enable_matter_helpers", True):
+        hass.data[DOMAIN]["matter_helper"] = AuroraMatterFabricHelper(hass)
 
     await async_setup_websocket_api(hass, storage)
     

@@ -31,19 +31,18 @@ class AuroraCardToolConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry: config_entries.ConfigEntry) -> config_entries.OptionsFlow:
-        """Get the options flow handler without manual initialization arguments."""
+        """Get the options flow handler."""
         return AuroraCardToolOptionsFlow()
 
 
 class AuroraCardToolOptionsFlow(OptionsFlowWithReload):
-    """Handle options flow with automated Home Assistant config entry injection."""
+    """Handle options flow."""
 
     async def async_step_init(self, user_input=None):
         """Manage configuration options."""
         if user_input is not None:
             return self.async_create_entry(title="", data=user_input)
 
-        # Access self.config_entry directly; it is provided automatically by Home Assistant
         current_watcher = self.config_entry.options.get("enable_file_watcher", self.config_entry.data.get("enable_file_watcher", True))
         current_ma = self.config_entry.options.get("enable_ma_helpers", self.config_entry.data.get("enable_ma_helpers", True))
         current_z2m = self.config_entry.options.get("enable_z2m_topology", self.config_entry.data.get("enable_z2m_topology", True))
