@@ -32,20 +32,18 @@ class AuroraCardToolConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry):
         """Get the options flow for this handler."""
-        return AuroraCardToolOptionsFlow(config_entry)
+        return AuroraCardToolOptionsFlow()
 
 
 class AuroraCardToolOptionsFlow(OptionsFlowWithReload):
     """Handle options flow and automatically trigger integration reload on change."""
-
-    def __init__(self, config_entry: config_entries.ConfigEntry) -> None:
-        self.config_entry = config_entry
 
     async def async_step_init(self, user_input=None):
         """Manage configuration options."""
         if user_input is not None:
             return self.async_create_entry(title="", data=user_input)
 
+        # self.config_entry is provided automatically by OptionsFlow
         current_watcher = self.config_entry.options.get("enable_file_watcher", self.config_entry.data.get("enable_file_watcher", True))
         current_ma = self.config_entry.options.get("enable_ma_helpers", self.config_entry.data.get("enable_ma_helpers", True))
         current_z2m = self.config_entry.options.get("enable_z2m_topology", self.config_entry.data.get("enable_z2m_topology", True))
